@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <link rel="icon" href="../images/mangastore-icon.svg">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../images/mangastore.svg" alt="logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+                <li>
+                    <a href="preguntas_frecuentes.html">FAQs</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contacto</h1>
+        <form class="contact-form">
+            <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                required>
+            <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+                required>
+            <textarea name="comentarios" placeholder="Escribe tus comentarios" cols="30" rows="10" required></textarea>
+            <input type="submit">
+        </form>
+    </main>
+
+    <footer>
+        <div class="redes">
+            <h2>Redes</h2>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../images/redes/facebook.svg" alt="logo facebook"></a>
+            <a href="https://instagram.com/" target="_blank"><img src="../images/redes/instagram.svg" alt="logo instagram"></a>
+        </div>
+        <div class="contactanos">
+            <h2>Contactanos</h2>
+            <a href="#"><img src="../images/redes/mail.svg" alt="logo mail"></a>
+        </div>
+        <div class="pagos">
+            <h2>Medios de pago</h2>
+            <img src="../images/pago/mastercard.png" alt="mastercard">
+            <img src="../images/pago/mercadopago.png" alt="mercado pago">
+            <img src="../images/pago/visa.png" alt="visa">
+        </div>
+    </footer>
+</body>
+</html>

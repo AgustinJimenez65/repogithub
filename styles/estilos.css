@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* ********************** HEADER ********************** */
+header{
+    background-color: #10002B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    padding: .25rem;
+}
+
+
+nav a{
+    text-decoration:none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #9D4EDD;
+}
+
+nav li {
+    padding: .5rem;
+}
+
+nav a:hover{
+    color: rgb(244, 244, 244);
+}
+
+/* ********************** TEXTO ********************** */
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #9D4EDD;;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #9D4EDD;;
+
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #000;
+}
+
+/* ********************** MAIN INICIO ********************** */
+
+.imagen-container img {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    width: 12.5rem;
+    height: 25rem;
+    border: thin solid rgb(201, 200, 200);
+    text-align: center;
+    background-color: #fff;
+    transition: all 400ms ease;
+    border-radius: .5rem;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 5px 1px #0004;
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 100%;
+    height: 17.5rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: .62rem;
+}
+
+.card a{
+    padding: .5rem 1.25rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    background-color: #9D4EDD;
+    border-radius: .25rem;
+}
+
+
+.card a:hover{
+    opacity: 75%;
+}
+
+/* boton de VER TODO */
+.btn-mas {
+    text-align:center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.btn-mas a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #9D4EDD;
+    border-radius: .3rem;
+    padding: .5rem 1.25rem;
+}
+
+.btn-mas a:hover {
+    opacity: 75%;
+}
+
+/* ********************** NOSOTROS ********************** */
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.nosotros-img {
+    margin: 1.25rem;
+    padding: 1.25rem;
+    background-color: #10002B;
+    border-radius: 8.1rem;
+    animation: logo-animation 1s ease;
+}
+
+@keyframes logo-animation {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.nosotros-img img {
+    width: 100%;
+    height: auto;
+}
+
+.nosotros-text {
+    max-width: 37.5rem;
+    height: 6.25rem;
+    margin-bottom: 1.25rem;
+    border-left: thick solid #9D4EDD;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* ********************** CONTACTO ********************** */
+
+.contact-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 2rem;
+}
+
+.contact-form > * {
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .25rem;
+    border: medium solid #9D4EDD;
+}
+
+.contact-form input[type="submit"] {
+    margin-bottom: 0;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #9D4EDD;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.contact-form input[type="submit"]:hover{
+    cursor: pointer;
+    opacity: 75%;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+/* ********************** PREGUNTAS FRECUENTES ********************** */
+
+.faqs-container {
+    text-align: start;
+    margin-left: 1rem;
+}
+.faqs-title {
+    display: flex;
+    align-items: center;
+}
+
+.faqs-title img {
+    margin-right: 1rem;
+}
+
+.faqs-caja {
+    max-width: 65rem;
+    margin-bottom: 2rem;
+}
+
+.faqs-img-pagos img {
+    width: 6.25rem;
+    height: 3.75rem;
+}
+/* ********************** FOOTER ********************** */
+
+footer{
+    background-color: #10002B;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.redes,
+.contactanos,
+.pagos {
+    text-align: center;
+    margin: .62rem;
+    width: 10.5rem;
+    height: 5.3rem;
+}
+
+.pagos img {
+    text-align: center;
+    width: 3.1rem;
+    height: 1.8rem;
+} 
+
+/* **************************** GRIDS Y MQ ********************************* */
+
+/* declaro grids del header */
+
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: footer;
+}
+
+.envoltura {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+/* grid de las cards */
+
+.productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+}
+
+/* declaracion de MQ */
+
+@media(min-width:500px) {
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav ul {
+        display: flex;
+    }
+}
+
+@media(min-width:768px) {
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+    }
+
+    
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media(min-width:1024px) {
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .nosotros {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    .nosotros-img {
+        min-width: 31.8rem;
+    }
+}
+
+@media(min-width:1250px) {
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .nosotros-text {
+        margin-left: 4rem;
+    }
+}
